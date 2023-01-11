@@ -8,12 +8,13 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region  = "us-east-1"
 }
 
-resource "aws_instance" "newweb" {
-  ami           = ami-0c2254f22b03751fa
+resource "aws_instance" "myfirstinstance" {
   instance_type = "t2.micro"
+  ami = "ami-0b5eea76982371e91"
+
 
   tags = {
     Name = "MyfirstInstance"
