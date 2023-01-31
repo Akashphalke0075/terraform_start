@@ -1,5 +1,5 @@
-resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket"
+resource "aws_s3_bucket" "bitwise" {
+  bucket = "my-tf-test-bucket-akash"
 
   tags = {
     Name        = "My bucket"
